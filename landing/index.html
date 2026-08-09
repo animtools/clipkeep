@@ -284,7 +284,7 @@ h2 {
 
 /* ---------- pricing ---------- */
 .pricing { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.price-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1080px; margin-left: auto; margin-right: auto; }
+.price-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 720px; margin-left: auto; margin-right: auto; }
 .price-card {
   background: var(--bg-card); border: 1px solid var(--line); border-radius: 18px;
   padding: 38px 34px; position: relative;
@@ -572,18 +572,11 @@ footer {
         </ul>
         <a class="price-cta" href="buy/subscribe.html">サブスクで始める</a>
       </div>
-      <div class="price-card reveal">
-        <p class="price-name">ClipKeep 買い切り</p>
-        <p class="price-amount">¥4,800</p>
-        <p class="price-desc">一度の支払いで ClipKeep を無制限に。</p>
-        <ul class="price-list">
-          <li>ClipKeep 単体の永続ライセンス</li>
-          <li>動画・Keep タイル 無制限</li>
-          <li>オフライン猶予 7 日</li>
-          <li>アップデート含む（当該アプリ）</li>
-        </ul>
-        <a class="price-cta" href="buy/perpetual.html">買い切りで購入</a>
-      </div>
+      <!--
+        ClipKeep 買い切りプランはベータ期間中は非掲載。
+        価格が暫定（playbooks/pricing.md）のため、確定するまで公開面に出さない。
+        確定したらこのカードを復帰させ、.price-grid を 3 列に戻す。
+      -->
     </div>
     <p class="price-note">表示は現行の Polar 価格です。決済画面で最終確認してください。解約・請求の管理は <a href="https://polar.sh/shinosuke/portal" style="text-decoration:underline">カスタマーポータル</a> から行えます。解約してもコレクションのデータは消えません。</p>
   </div>
@@ -609,7 +602,7 @@ footer {
       </details>
       <details class="reveal">
         <summary>無料プランの制限を超えたらデータは消えますか？</summary>
-        <p>消えません。無料枠を超えた分は表示が制限されるだけで、データベースにはすべて残ります。有料プラン（All-Access または ClipKeep 買い切り）にアップグレードすれば、その瞬間に全データへ再アクセスできます。</p>
+        <p>消えません。無料枠を超えた分は表示が制限されるだけで、データベースにはすべて残ります。有料プラン（All-Access）にアップグレードすれば、その瞬間に全データへ再アクセスできます。</p>
       </details>
       <details class="reveal">
         <summary>ベータ版の不具合はどこに報告すればいい？</summary>
