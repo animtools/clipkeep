@@ -6,7 +6,11 @@
 
 ## 連絡方法
 
+- **メール**: **shinosuke.support@gmail.com**
 - **不具合・要望**: [GitHub Issues](https://github.com/animtools/clipkeep/issues)
+
+どんな細かいことでも構いません。**「ここが要る」「これだと回らない」という話が一番役に立ちます。**
+うまくいった話より、詰まった話のほうが助かります。
 
 ## 不具合報告のときに書いていただきたいこと
 
