@@ -30,9 +30,10 @@ ClipKeep は、動画からサムネイルタイルを生成して一覧し、�
 - 有料プラン: 書き出し
 - All-Access（サブスク）: 書き出しに加えて、スキャン実験室の顔・ポーズ・シーン検出・文字起こしと、検出した結果を書き換える操作（カットフレームの手動編集、シーンの切れ目からのタイル作り直し）
 
+**いま購入できるのは All-Access（サブスク）だけです。買い切りも将来的に用意する予定ですが、こちらは完成品を永続的に所有する形なので、テスト段階で公開しているいまは出していません。**
+
 詳しくは [USER_GUIDE.md のプランとライセンス](./USER_GUIDE.md#9-プランとライセンス)、料金は [ハブの料金ページ](https://shinosuke-site.vercel.app/pricing.html) を参照してください。購読の管理は [カスタマーポータル](https://polar.sh/shinosuke/portal) から行えます。利用条件は [LICENSE](./LICENSE) を参照してください。
 
 ## 紹介ページ
 
 - [紹介ページ](https://animtools.github.io/clipkeep/landing/)
-- 購入ドア: [landing/buy/subscribe.html](./landing/buy/subscribe.html)（All-Access）、[landing/buy/perpetual.html](./landing/buy/perpetual.html)（買い切り）
