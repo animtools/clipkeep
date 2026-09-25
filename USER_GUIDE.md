@@ -15,7 +15,6 @@ ClipKeep でできることは大きく2つです。動画をタイルで**眺�
 ZIP には次のものが入っています。どれも消さずに、同じフォルダに置いたままにしてください。
 
 - `clipkeep.exe`
-- `clipkeep-mcp.exe`
 - `VideoTileKunPipeline`
 - `BUILD-INFO.txt`
 
