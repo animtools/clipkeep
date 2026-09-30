@@ -1,6 +1,6 @@
 # USER_GUIDE — ClipKeep
 
-ClipKeep 0.1.1-beta の使い方を、起動から順に説明します。解凍から最初の Keep までを短く試すなら [QUICKSTART.md](./QUICKSTART.md) を参照してください。
+ClipKeep の使い方を、起動から順に説明します。解凍から最初の Keep までを短く試すなら [QUICKSTART.md](./QUICKSTART.md) を参照してください。
 
 ClipKeep でできることは大きく2つです。動画をタイルで**眺めて探すこと**（4章）と、気になった瞬間を **Keep して残すこと**（5章）です。
 
