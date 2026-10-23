@@ -338,6 +338,13 @@ footer {
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a:hover { color: var(--text); }
+/* 画面内の動画素材の帰属（record-for-ai 票26 D2） */
+.credits { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--line); line-height: 1.8; }
+.credits h2 { font-size: .9rem; color: var(--text); margin: 0 0 8px; }
+.credits p { margin: 0 0 6px; }
+.credits a { text-decoration: underline; }
+.credits a:hover { color: var(--text); }
+.credits .t { white-space: nowrap; }  /* 作品名の途中で折り返さない */
 
 /* reveal on scroll */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
@@ -384,7 +391,7 @@ footer {
     <figure class="hero-shot reveal">
       <img src="assets/hero.gif" width="1100" height="688" loading="eager" decoding="async"
            alt="ClipKeep のライブラリ画面。動画がタイルで並び、スクロールして一覧を眺めている">
-      <figcaption>実際の画面です。取り込んだ動画が、中身の見えるタイルで並びます。<br><span class="shot-note">画面の動画は Pexels の素材です。</span></figcaption>
+      <figcaption>実際の画面です。取り込んだ動画が、中身の見えるタイルで並びます。<br><span class="shot-note">画面の動画は Blender などのオープンムービーです（<a href="#credits">素材について</a>）。</span></figcaption>
     </figure>
   </div>
 </section>
@@ -482,7 +489,7 @@ footer {
       <div class="feat reveal">
         <span class="feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
         <h3>タグ・レーティング・検索</h3>
-        <p>動画にもタイルにも Keep にもタグと評価を付けて横断検索。ライブラリが育つほど、見つかるスピードが上がります。</p>
+        <p>動画にも Keep にもマーカーにもタグと評価を付けて横断検索。ライブラリが育つほど、見つかるスピードが上がります。</p>
       </div>
     </div>
     <div class="shots-2">
@@ -493,8 +500,8 @@ footer {
       </figure>
       <figure class="shot reveal">
         <img src="assets/tag-search.png" width="1200" height="750" loading="lazy" decoding="async"
-             alt="「夜景」タグで絞り込み、夜景の動画だけが並んだ画面">
-        <figcaption><b>タグで絞り込む</b>「夜景」タグを1つ選ぶだけで、夜景の動画だけが並びます。</figcaption>
+             alt="「3DCG」タグで絞り込み、3DCG の動画だけが並んだ画面">
+        <figcaption><b>タグで絞り込む</b>「3DCG」タグを1つ選ぶだけで、3DCG の動画だけが並びます。</figcaption>
       </figure>
     </div>
   </div>
@@ -534,7 +541,7 @@ footer {
       <p>
         ClipKeep はクラウドアップロード不要の完全ローカルアプリ。
         動画ファイルは元のフォルダに置いたまま、アカウント登録すら要りません。
-        どんなコレクションでも、誰にも見られず、通信量ゼロで。
+        どんなコレクションでも、動画をどこにも送らず、誰にも見られずに。
       </p>
       <div class="local-points">
         <span class="local-point"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>アップロードなし</span>
@@ -550,7 +557,7 @@ footer {
   <div class="container">
     <p class="section-label">Pricing</p>
     <h2>まずは無料で。必要になったらアップグレード。</h2>
-    <p class="section-sub">無料プランに期限はありません。制限を超えてもデータは消えず、有料プランにするとそのまま全件へ戻れます。</p>
+    <p class="section-sub">無料プランに期限はありません。上限に達しても作ってあるものは消えず、有料プランにすると上限なく作れます。</p>
     <div class="price-grid">
       <div class="price-card reveal">
         <p class="price-name">無料</p>
@@ -559,6 +566,7 @@ footer {
         <ul class="price-list">
           <li>動画は何本でも登録できます</li>
           <li>Keep タイル 100 枚まで</li>
+          <li>マーカー 300 件まで</li>
           <li>プロファイル 1 つ</li>
           <li>タイルカタログは無制限</li>
           <li>ホバープレビュー・クリップエディタ</li>
@@ -571,7 +579,7 @@ footer {
         <p class="price-desc">年額 ¥3,750 も選べます。7 日間の無料トライアル付き。</p>
         <ul class="price-list">
           <li>ClipKeep を含むスイートアプリを契約中ずっと利用</li>
-          <li>Keep タイルを無制限に</li>
+          <li>Keep タイルとマーカーを無制限に</li>
           <li>プロファイルをいくつでも</li>
           <li>Keep した範囲を動画ファイルへ書き出し</li>
           <li>スキャン実験室：顔・ポーズ・シーン検出・文字起こし</li>
@@ -616,7 +624,7 @@ footer {
       </details>
       <details class="reveal">
         <summary>無料プランの制限を超えたらデータは消えますか？</summary>
-        <p>消えません。無料枠を超えた分は表示が制限されるだけで、データベースにはすべて残ります。有料プランのライセンスを認証すれば、その瞬間に全データへ再アクセスできます。なお動画の登録数に上限はありません。</p>
+        <p>消えません。上限に達すると新しく作ることだけが止まり、作ってあるものはそのまま見たり直したりできます。有料プランのライセンスを認証すれば、その場で上限なく作れるようになります。なお動画の登録数に上限はありません。</p>
       </details>
       <details class="reveal">
         <summary>ベータ版の不具合はどこに報告すればいい？</summary>
@@ -643,6 +651,12 @@ footer {
 </section>
 
 <footer>
+  <div class="container credits" id="credits">
+    <h2>画面内の動画素材について</h2>
+    <p>このページのスクリーンショットに写っている動画は、Blender Foundation が <a href="https://creativecommons.org/licenses/by/4.0/deed.ja">クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）</a>で公開しているオープンムービーと、Nina Paley が CC0 で公開している作品です。動画のコマを静止画として切り出し、アプリの画面の中に縮小して表示しています。</p>
+    <p>Blender Foundation（(CC) Blender Foundation | <a href="https://studio.blender.org/">studio.blender.org</a>）: <span class="t">Agent 327: Operation Barbershop</span>／<span class="t">Big Buck Bunny</span>／<span class="t">Caminandes 2: Gran Dillama</span>／<span class="t">Caminandes 3: Llamigos</span>／<span class="t">Charge</span>／<span class="t">Coffee Run</span>／<span class="t">Cosmos Laundromat: First Cycle</span>／<span class="t">Elephants Dream</span>／<span class="t">Glass Half</span>／<span class="t">HERO</span>／<span class="t">Making Of Sintel</span>／<span class="t">Sintel</span>／<span class="t">Spring</span>／<span class="t">Sprite Fright</span>／<span class="t">Tears of Steel</span>／<span class="t">The Daily Dweebs</span>／<span class="t">Wing It!</span></p>
+    <p>Nina Paley（CC0）: <a href="https://www.sitasingstheblues.com/">Sita Sings the Blues</a>／<a href="https://sedermasochism.com/">Seder-Masochism</a></p>
+  </div>
   <div class="container footer-inner">
     <span>© 2026 ClipKeep — Beta ／ <a href="https://shinosuke-site.vercel.app/">Shinosuke ツールスイート</a>のひとつです</span>
     <nav class="footer-links">
